@@ -29,10 +29,21 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.StatusConnTB = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.DisconnectBt = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.ConnectBt = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.SlotTB = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.CpuTypeCB = new System.Windows.Forms.ComboBox();
+            this.RackTB = new System.Windows.Forms.TextBox();
             this.DbAddressTB = new System.Windows.Forms.TextBox();
+            this.IPaddressTB = new System.Windows.Forms.TextBox();
             this.WriteDataTB = new System.Windows.Forms.TextBox();
             this.ReadDataTB = new System.Windows.Forms.TextBox();
             this.WriteBt = new System.Windows.Forms.Button();
@@ -40,7 +51,6 @@
             this.PreviousPage = new System.Windows.Forms.Button();
             this.NextPage = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,19 +60,9 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.StatusConnTB = new System.Windows.Forms.TextBox();
-            this.SlotTB = new System.Windows.Forms.TextBox();
-            this.RackTB = new System.Windows.Forms.TextBox();
-            this.IPaddressTB = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.CpuTypeCB = new System.Windows.Forms.ComboBox();
-            this.DisconnectBt = new System.Windows.Forms.Button();
-            this.ConnectBt = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -73,17 +73,17 @@
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.StatusConnTB);
-            this.panel1.Controls.Add(this.SlotTB);
-            this.panel1.Controls.Add(this.RackTB);
-            this.panel1.Controls.Add(this.IPaddressTB);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.CpuTypeCB);
             this.panel1.Controls.Add(this.DisconnectBt);
-            this.panel1.Controls.Add(this.ConnectBt);
             this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.ConnectBt);
             this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.SlotTB);
             this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.CpuTypeCB);
+            this.panel1.Controls.Add(this.RackTB);
             this.panel1.Controls.Add(this.DbAddressTB);
+            this.panel1.Controls.Add(this.IPaddressTB);
             this.panel1.Controls.Add(this.WriteDataTB);
             this.panel1.Controls.Add(this.ReadDataTB);
             this.panel1.Controls.Add(this.WriteBt);
@@ -92,7 +92,59 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(773, 384);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(21, 109);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(57, 13);
+            this.label11.TabIndex = 48;
+            this.label11.Text = "IP address";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(47, 160);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(25, 13);
+            this.label12.TabIndex = 47;
+            this.label12.Text = "Slot";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(43, 135);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(33, 13);
+            this.label13.TabIndex = 46;
+            this.label13.Text = "Rack";
+            // 
+            // StatusConnTB
+            // 
+            this.StatusConnTB.Location = new System.Drawing.Point(114, 236);
+            this.StatusConnTB.Name = "StatusConnTB";
+            this.StatusConnTB.Size = new System.Drawing.Size(100, 20);
+            this.StatusConnTB.TabIndex = 45;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(47, 54);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(29, 13);
+            this.label14.TabIndex = 41;
+            this.label14.Text = "CPU";
+            // 
+            // DisconnectBt
+            // 
+            this.DisconnectBt.Location = new System.Drawing.Point(220, 234);
+            this.DisconnectBt.Name = "DisconnectBt";
+            this.DisconnectBt.Size = new System.Drawing.Size(75, 23);
+            this.DisconnectBt.TabIndex = 39;
+            this.DisconnectBt.Text = "Disconnect";
+            this.DisconnectBt.UseVisualStyleBackColor = true;
+            this.DisconnectBt.Click += new System.EventHandler(this.DisconnectBt_Click_1);
             // 
             // label7
             // 
@@ -103,6 +155,16 @@
             this.label7.TabIndex = 37;
             this.label7.Text = "Write data";
             // 
+            // ConnectBt
+            // 
+            this.ConnectBt.Location = new System.Drawing.Point(26, 233);
+            this.ConnectBt.Name = "ConnectBt";
+            this.ConnectBt.Size = new System.Drawing.Size(75, 23);
+            this.ConnectBt.TabIndex = 38;
+            this.ConnectBt.Text = "Connect";
+            this.ConnectBt.UseVisualStyleBackColor = true;
+            this.ConnectBt.Click += new System.EventHandler(this.ConnectBt_Click_1);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -111,6 +173,14 @@
             this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 36;
             this.label6.Text = "Read data";
+            // 
+            // SlotTB
+            // 
+            this.SlotTB.Location = new System.Drawing.Point(84, 159);
+            this.SlotTB.Name = "SlotTB";
+            this.SlotTB.Size = new System.Drawing.Size(100, 20);
+            this.SlotTB.TabIndex = 44;
+            this.SlotTB.Text = "2";
             // 
             // label5
             // 
@@ -121,12 +191,36 @@
             this.label5.TabIndex = 35;
             this.label5.Text = "DB";
             // 
+            // CpuTypeCB
+            // 
+            this.CpuTypeCB.FormattingEnabled = true;
+            this.CpuTypeCB.Location = new System.Drawing.Point(82, 51);
+            this.CpuTypeCB.Name = "CpuTypeCB";
+            this.CpuTypeCB.Size = new System.Drawing.Size(121, 21);
+            this.CpuTypeCB.TabIndex = 40;
+            // 
+            // RackTB
+            // 
+            this.RackTB.Location = new System.Drawing.Point(84, 130);
+            this.RackTB.Name = "RackTB";
+            this.RackTB.Size = new System.Drawing.Size(100, 20);
+            this.RackTB.TabIndex = 43;
+            this.RackTB.Text = "0";
+            // 
             // DbAddressTB
             // 
             this.DbAddressTB.Location = new System.Drawing.Point(356, 59);
             this.DbAddressTB.Name = "DbAddressTB";
             this.DbAddressTB.Size = new System.Drawing.Size(100, 20);
             this.DbAddressTB.TabIndex = 31;
+            // 
+            // IPaddressTB
+            // 
+            this.IPaddressTB.Location = new System.Drawing.Point(84, 104);
+            this.IPaddressTB.Name = "IPaddressTB";
+            this.IPaddressTB.Size = new System.Drawing.Size(100, 20);
+            this.IPaddressTB.TabIndex = 42;
+            this.IPaddressTB.Text = "192.168.0.228";
             // 
             // WriteDataTB
             // 
@@ -150,6 +244,7 @@
             this.WriteBt.TabIndex = 22;
             this.WriteBt.Text = "Write";
             this.WriteBt.UseVisualStyleBackColor = true;
+            this.WriteBt.Click += new System.EventHandler(this.WriteBt_Click);
             // 
             // ReadDataBt
             // 
@@ -159,10 +254,11 @@
             this.ReadDataBt.TabIndex = 21;
             this.ReadDataBt.Text = "Read";
             this.ReadDataBt.UseVisualStyleBackColor = true;
+            this.ReadDataBt.Click += new System.EventHandler(this.ReadDataBt_Click);
             // 
             // PreviousPage
             // 
-            this.PreviousPage.Location = new System.Drawing.Point(235, 22);
+            this.PreviousPage.Location = new System.Drawing.Point(697, 10);
             this.PreviousPage.Name = "PreviousPage";
             this.PreviousPage.Size = new System.Drawing.Size(82, 23);
             this.PreviousPage.TabIndex = 1;
@@ -172,7 +268,7 @@
             // 
             // NextPage
             // 
-            this.NextPage.Location = new System.Drawing.Point(445, 22);
+            this.NextPage.Location = new System.Drawing.Point(704, 46);
             this.NextPage.Name = "NextPage";
             this.NextPage.Size = new System.Drawing.Size(75, 23);
             this.NextPage.TabIndex = 1;
@@ -191,22 +287,13 @@
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Location = new System.Drawing.Point(15, 75);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(773, 384);
             this.panel2.TabIndex = 38;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(60, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 13);
-            this.label8.TabIndex = 35;
-            this.label8.Text = "TCP/IP ";
             // 
             // label4
             // 
@@ -283,15 +370,6 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 38;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(244, 260);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 37;
-            this.button2.Text = "Disconnect";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(45, 260);
@@ -301,98 +379,23 @@
             this.button1.Text = "Connect";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // label8
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(21, 109);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 13);
-            this.label11.TabIndex = 48;
-            this.label11.Text = "IP address";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(60, 16);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 13);
+            this.label8.TabIndex = 35;
+            this.label8.Text = "TCP/IP ";
             // 
-            // label12
+            // button2
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(47, 160);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(25, 13);
-            this.label12.TabIndex = 47;
-            this.label12.Text = "Slot";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(43, 135);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(33, 13);
-            this.label13.TabIndex = 46;
-            this.label13.Text = "Rack";
-            // 
-            // StatusConnTB
-            // 
-            this.StatusConnTB.Location = new System.Drawing.Point(117, 255);
-            this.StatusConnTB.Name = "StatusConnTB";
-            this.StatusConnTB.Size = new System.Drawing.Size(100, 20);
-            this.StatusConnTB.TabIndex = 45;
-            // 
-            // SlotTB
-            // 
-            this.SlotTB.Location = new System.Drawing.Point(105, 158);
-            this.SlotTB.Name = "SlotTB";
-            this.SlotTB.Size = new System.Drawing.Size(100, 20);
-            this.SlotTB.TabIndex = 44;
-            this.SlotTB.Text = "2";
-            // 
-            // RackTB
-            // 
-            this.RackTB.Location = new System.Drawing.Point(105, 132);
-            this.RackTB.Name = "RackTB";
-            this.RackTB.Size = new System.Drawing.Size(100, 20);
-            this.RackTB.TabIndex = 43;
-            this.RackTB.Text = "0";
-            // 
-            // IPaddressTB
-            // 
-            this.IPaddressTB.Location = new System.Drawing.Point(105, 106);
-            this.IPaddressTB.Name = "IPaddressTB";
-            this.IPaddressTB.Size = new System.Drawing.Size(100, 20);
-            this.IPaddressTB.TabIndex = 42;
-            this.IPaddressTB.Text = "192.168.0.162";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(47, 54);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(29, 13);
-            this.label14.TabIndex = 41;
-            this.label14.Text = "CPU";
-            // 
-            // CpuTypeCB
-            // 
-            this.CpuTypeCB.FormattingEnabled = true;
-            this.CpuTypeCB.Location = new System.Drawing.Point(84, 54);
-            this.CpuTypeCB.Name = "CpuTypeCB";
-            this.CpuTypeCB.Size = new System.Drawing.Size(121, 21);
-            this.CpuTypeCB.TabIndex = 40;
-            // 
-            // DisconnectBt
-            // 
-            this.DisconnectBt.Location = new System.Drawing.Point(223, 252);
-            this.DisconnectBt.Name = "DisconnectBt";
-            this.DisconnectBt.Size = new System.Drawing.Size(75, 23);
-            this.DisconnectBt.TabIndex = 39;
-            this.DisconnectBt.Text = "Disconnect";
-            this.DisconnectBt.UseVisualStyleBackColor = true;
-            // 
-            // ConnectBt
-            // 
-            this.ConnectBt.Location = new System.Drawing.Point(24, 252);
-            this.ConnectBt.Name = "ConnectBt";
-            this.ConnectBt.Size = new System.Drawing.Size(75, 23);
-            this.ConnectBt.TabIndex = 38;
-            this.ConnectBt.Text = "Connect";
-            this.ConnectBt.UseVisualStyleBackColor = true;
+            this.button2.Location = new System.Drawing.Point(244, 260);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 37;
+            this.button2.Text = "Disconnect";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

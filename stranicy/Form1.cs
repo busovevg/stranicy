@@ -21,6 +21,10 @@ namespace stranicy
             InitializeComponent();
         }
 
+       
+
+        
+
         private void PreviousPage_Click(object sender, EventArgs e)
         {
             if (index > 0)
@@ -34,13 +38,16 @@ namespace stranicy
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+       {
             listPanel.Add(panel1);
             listPanel.Add(panel2);
             listPanel[index].BringToFront();
             CpuTypeCB.DataSource = Enum.GetNames(typeof(CpuType));
-        }
-        private void ConnectBt_Click(object sender, EventArgs e)
+
+       }
+
+
+        private void ConnectBt_Click_1(object sender, EventArgs e)
         {
 
             CpuType cpu = (CpuType)Enum.Parse(typeof(CpuType), CpuTypeCB.SelectedValue.ToString());
@@ -56,7 +63,7 @@ namespace stranicy
         }
 
 
-        private void DisconnectBt_Click(object sender, EventArgs e)
+        private void DisconnectBt_Click_1(object sender, EventArgs e)
         {
 
             plc.Close();
@@ -80,9 +87,6 @@ namespace stranicy
             plc.Write(address, setpoint);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
     }
 }
